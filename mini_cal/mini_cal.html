@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mini_cal</title>
+  <script>
+    var sum = 0
+
+    function add_num(){
+      sum ++;
+      document.getElementById("value").innerHTML = "값: "+sum;
+    }
+
+    function del_num(){
+      sum --;
+      document.getElementById("value").innerHTML = "값: "+sum;
+    }
+  </script>
+</head>
+<body>
+  <h1>Count</h1>
+  <h2 id="value">값: 0</h2>
+  <div>
+    <button onclick="add_num()">Plus</button>
+    <button onclick="del_num()">Minus</button>
+  </div>
+</body>
+</html>
